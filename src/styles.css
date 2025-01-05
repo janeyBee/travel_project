@@ -79,7 +79,7 @@ header {
 }
 
 .img_responsive {
-  max-width: 100%;
+  width: 100%;
   display: block;
 }
 
@@ -230,6 +230,13 @@ footer a:hover {
   text-decoration: underline;
 }
 
+.embed{
+    width: 100%;
+    aspect-ratio: 1/1;
+    display: block;
+    margin: 0 auto;
+    padding-top: 30px;
+}
 .disclaimer {
   margin-top: 30px;
   font-family: monospace;
@@ -258,5 +265,13 @@ footer a:hover {
   section {
     padding: 30px;
     text-align: center;
+  }
+
+  .card_header img{
+    display:none;
+  }
+
+  .embed{
+    aspect-ratio: 16/9;
   }
 }
