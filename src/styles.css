@@ -10,7 +10,7 @@ body{
     margin: 0 auto;  
 }
 
-.grid{
+.grid {
     display: grid;
     grid-gap: 64px;
 }
@@ -20,13 +20,50 @@ body{
 }
 
 .grid-3-columns{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-3-columns_offset{
   grid-template-columns: 1fr 2fr 2fr;
 }
 
 section{
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
-    padding: 100px 0;
+    padding: 100px;
+}
+
+section.secondary{
+    background-color:#f8f9f9;
+}
+
+.card{
+    background-color: #fff;
+    margin-top: 30px 0;
+}
+
+.card_body{
+    padding: 30px;
+}
+
+.card_footer{
+    padding: 0px 10px 30px;
+}
+
+.btn{
+    display: block;
+    color:#fff;
+    background-color: #dba566;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding: 16px;
+}
+
+.text-center{
+    text-align: center;
 }
 
 header{
@@ -41,6 +78,7 @@ header{
 
 .img_responsive{
     max-width: 100%;
+    display: block;
 }
 
 header h1{
@@ -106,6 +144,24 @@ main h3{
     margin: 0;
 }
 
+main h4{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1;
+    color:#191f13;  
+    margin: 0;
+}
+
+main h5{
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1;
+    color:#191f13;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+
 main p{
     font-style: normal;
     font-weight: 400;
@@ -115,6 +171,8 @@ main p{
     opacity: 0.7;
 
 }
+
+
 footer{
     background-image: linear-gradient(rgba(25,31,19,0.5),rgba(25,31,19,0.8)), url(../images/atacama-desert-hand.jpeg);
     background-size: cover;
@@ -167,26 +225,26 @@ footer a:hover{
 }
 
 @media (max-width: 960px){
+
     header{
         padding: 60px 0;
     }
+
     h1{
        font-size: 60px; 
     }
     
-.disclaimer{
-    display: none;
-}
+    .disclaimer{
+        display: none;
+    }
 
-.grid{
-    grid-template-columns: 1fr;
-    grid-gap:32px;
-}
+    .grid{
+        grid-template-columns: 1fr;
+        grid-gap: 32px;
+    }
 
-section{
-    padding: 30px;
-    text-align: center;
-}
-
-
+    section{
+        padding: 30px;
+        text-align: center;
+    }
 }
