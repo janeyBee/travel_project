@@ -35,7 +35,11 @@ section.secondary{
   background-color: #f8f9f9;
 }
 
-section.secondary, .photos h3{
+section.secondary h3{
+    padding-bottom: 30px;
+}
+
+section.photos h3{
     padding-bottom: 30px;
 }
 
