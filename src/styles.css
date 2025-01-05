@@ -31,11 +31,11 @@ section {
   padding: 100px;
 }
 
-section.secondary {
+section.secondary{
   background-color: #f8f9f9;
 }
 
-section.secondary h3{
+section.secondary, .photos h3{
     padding-bottom: 30px;
 }
 
@@ -184,6 +184,7 @@ main p {
   opacity: 0.7;
 }
 
+
 footer {
   background-image: linear-gradient(
       rgba(25, 31, 19, 0.5),
@@ -237,6 +238,11 @@ footer a:hover {
     margin: 0 auto;
     padding-top: 30px;
 }
+
+.instagram_embeds{
+    margin: 30px 0;
+}
+
 .disclaimer {
   margin-top: 30px;
   font-family: monospace;
@@ -274,4 +280,6 @@ footer a:hover {
   .embed{
     aspect-ratio: 16/9;
   }
+
+  
 }
